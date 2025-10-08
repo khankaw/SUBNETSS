@@ -6,7 +6,7 @@ Es un programa que tiene dos funcionalidades:
 
 ### Ejecución ###  
 
-- Clona el repositorio: https://github.com/khankaw/SUBNETSS
+- Clona el repositorio: https://github.com/khankaw/SUBNETSS.git
 - Entra al directorio SUBNETSS
 - Da permisos de ejecución
 
