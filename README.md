@@ -21,6 +21,10 @@ o
 ````
 ./subnets.sh -h
 ````
+
+<img width="1330" height="470" alt="helpPanel" src="https://github.com/user-attachments/assets/0834e513-b610-4c42-9614-f1ca0cbb90ae" />
+
+
 #### Para la máscara ####
 Ejemplo:  
 
@@ -42,6 +46,9 @@ El primer argumento es una letra. Puede ser a, b o c y representan un bloque de 
 - c->192.168.0.0/16
   
 Tanto la letra como los hosts deben de estar dentro de las comillas.
+
+<img width="1316" height="427" alt="Ejemplo" src="https://github.com/user-attachments/assets/28a998bf-49e1-4b01-a950-e5cc7cf65d90" />
+
 
 #### Detalles ####
 
