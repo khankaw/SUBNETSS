@@ -1,8 +1,9 @@
 ## SUBNETSS ##
 
-Es un programa que tiene dos funcionalidades:
+Es un programa que tiene tres funcionalidades:
 - Encontrar la dirección de red dada una dirección y su máscara
 - Calcular las subredes dada la dirección elegida y los hosts
+- Encontrar vecinos en la red usando mensajes ping para una interfaz dada
 
 ### Ejecución ###  
 
@@ -22,8 +23,7 @@ o
 ./subnets.sh -h
 ````
 
-<img width="1330" height="470" alt="helpPanel" src="https://github.com/user-attachments/assets/0834e513-b610-4c42-9614-f1ca0cbb90ae" />
-
+![NuevoHelpPanel](https://github.com/user-attachments/assets/f02a43fe-0e6e-41d1-be69-3ee4d338126b)
 
 #### Para la máscara ####
 Ejemplo:  
@@ -32,6 +32,8 @@ Ejemplo:
 ./subnets.sh -b "192.168.5.0 255.255.255.0"
 ````
 Se debe poner el argumento entre comillas de otra forma dará errores
+
+<img width="906" height="133" alt="image" src="https://github.com/user-attachments/assets/ee79df1b-f933-4b4a-8bba-dc6b4eae6134" />
 
 #### Para el cáclulo ####
 Ejemplo:  
@@ -48,6 +50,17 @@ El primer argumento es una letra. Puede ser a, b o c y representan un bloque de 
 Tanto la letra como los hosts deben de estar dentro de las comillas.
 
 <img width="1316" height="427" alt="Ejemplo" src="https://github.com/user-attachments/assets/28a998bf-49e1-4b01-a950-e5cc7cf65d90" />
+
+#### Para escanear ####
+
+Ejemplo:
+
+````
+./subnets.sh -n enp0s3
+````
+El nombre de la interfaz se puede especificar sin comillas
+
+![EjemploScan](https://github.com/user-attachments/assets/ed8d3e2f-3909-4210-9c52-e6c1d0103d93)
 
 
 #### Detalles ####
