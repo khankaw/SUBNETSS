@@ -51,12 +51,20 @@ function manysubnets()
 
 }
 
-while getopts "b:""m:""h" arg; do
+function scan()
+{
+
+	source scan.sh
+
+}
+
+while getopts "b:""m:""n:""h" arg; do
 
     case $arg in
 
         b) ip_mask=$OPTARG;;
         m) ip_arr=$OPTARG;;
+        n) ip_int=$OPTARG;;
         h) ;;
 
     esac
@@ -67,6 +75,8 @@ if [ "$ip_mask" ];then
 	basic
 elif [ "$ip_arr" ];then
 	manysubnets	
+elif [ "$ip_int" ];then
+	scan
 else
 	helpPanel
 fi
